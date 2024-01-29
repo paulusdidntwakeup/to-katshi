@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="valentines.css">
+  <script src="valentines.js" defer></script>
+  <script>
+    function moveNoButton() {
+      var noButton = document.getElementById('noButton');
+      noButton.style.position = 'absolute';
+      noButton.style.left = Math.random() * (window.innerWidth - noButton.offsetWidth) + 'px';
+      noButton.style.top = Math.random() * (window.innerHeight - noButton.offsetHeight) + 'px';
+    }
+  </script>
+</head>
+
+<body>
+    <div class="main" id="demo" data-lining>
+        <h1> Dear Katshi &#129419; </h1>
+        <P>my heart feels a flutter,
+         A symphony of emotions, a melody soft as a whisper.
+         In the garden of my thoughts, one bloom stands apart, oh how pretty she is.
+         </P>
+        <P>A flower named Katshi, charms my heart.</P>
+        <P>My lola bunny With each passing day, your vibrant existance becomes my tune
+         A serenade that makes the stars blush and the moon swoon.
+         I find myself drawn to your warmth and grace
+         </P>
+         <p> please dont stop</p>
+        <P>In your presence time seems to slow its pace.</P>
+        <P>So here I am, with courage in my hand,
+         A simple note expressing an admiration that's grand.
+         On this day of hearts will you like to be mine ?
+         </P>
+        <P>My Valentine ofc&#129392;</P>
+       
+    </div>
+  <div id="question"> will you be my Valentine?</div>
+
+  <div id="buttons">
+
+    <a href="the end.html">
+      <button id="yesButton">Yes</button>
+    </a>
+    <button id="noButton" onclick="moveNoButton()">No</button>
+  </div>
+
+</body>
+
+</html>

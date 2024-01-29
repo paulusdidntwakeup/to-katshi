@@ -1,0 +1,75 @@
+body {
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #F4F1DE;
+  background-color: #ffadc1;
+}
+a {
+  position: relative;
+  color: #F4F1DE;
+}
+a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-color: 1px solid #F4F1DE; 
+}
+#demo {
+  margin: 3em auto;
+  width: 640px;
+}
+[data-sr] {
+  visibility: hidden;
+}
+  #question {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffffff; 
+  }
+  
+  #buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  button {
+    padding: 25px 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  button#yesButton {
+    background-color: #ff69b4; 
+    color: #fff; 
+  }
+  
+  button#noButton {
+    background-color: #fefefe; 
+    color: #fa5dc5; 
+  }
+  
+  
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  button#yesButton:hover {
+    animation: heartbeat 0.5s infinite;
+    transition: 0.5s;
+            box-shadow: 0 0 30px #ffffff, 0 0 300px rgb(255, 255, 255), 0 0 300px rgb(202, 101, 101), 0 0 500px rgb(255, 255, 255), 0 0 200px rgb(255, 108, 250);
+
+  }
+  
+  button#noButton:hover {
+    animation: heartbeat 0.5s infinite; 
+  }
+  

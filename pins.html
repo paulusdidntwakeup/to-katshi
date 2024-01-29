@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i missed you</title>
+    <style>    
+        :root {
+          --card_width: 250px;
+          --row_increment: 10px;
+          --card_border_radius: 16px;
+          --card_small: 26;
+          --card_medium: 33;
+          --card_large: 45;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffadc1;
+            text-align: center;
+            color: aliceblue;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        
+        }
+
+        .pin_container {
+            margin: 0;
+            padding: 0;
+            width: 80vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--card_width));
+            grid-auto-rows: var(--row_increment);
+            justify-content: center;
+
+            background-color: #ffadc1;
+        }
+
+        .card {
+            padding: 0px;
+            margin: 15px 10px;
+            border-radius: var(--card_border_radius);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .card_small {
+            grid-row-end: span var(--card_small);
+        } 
+
+        .card_medium {
+            grid-row-end: span var(--card_medium);
+        }
+
+        .card_large {
+            grid-row-end: span var(--card_large);
+        }
+        h1{
+            font-size: 50px;
+        }
+        button {
+            height: 35px;
+            margin: 5px 0px;
+            background-color:#ffffff;
+            border: none;
+            border-radius: 5px;
+            color:#ffadc1;
+        }
+        button:hover {
+            transition: 0.5s;
+            box-shadow: 0 0 15px #ffffff, 0 0 25px rgb(255, 255, 255), 0 0 50px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255), 0 0 200px rgb(255, 108, 250);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--card_border_radius);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main" id="demo" data-lining>
+        <h1>lets set a mood girl &#129322;</h1>
+    </div>
+    <div>
+      <audio id="audioPlayer" controls>
+        <source src="/Users/paulusabraham/Desktop/superpowers.mp3" type="audio/mpeg"></source>
+        <source src="/Users/paulusabraham/Desktop/superpowers.mp3" type="audio/wav"></source>
+      </audio>
+      <p> sorry we dont have pictures together so here is my compilation of my few fav pictures of you.</p>
+        <P>	&#128128;PLS DONT HATE ME AFTER THIS&#128128;</p>
+      <button onclick="redirectToAudioPage()">if your done with this page press me</button>
+    </div>
+    <div class="pin_container">
+        <div class="card card_small">
+            <img src="/Users/paulusabraham/Desktop/Wiliko.JPG" alt="Image 1">
+            cute
+        </div>
+        <div class="card card_medium">
+            <img src="/Users/paulusabraham/Desktop/IMG_8809.jpeg" alt="Image 3">
+            you look like a puffer fish
+        </div>
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/katshi4.jpeg" alt="Image 4">
+            cute , sort of looks like mom
+        </div>
+        <div class="card card_small">
+            <img src="/Users/paulusabraham/Desktop/IMG_7446 3.jpeg" alt="Image 5">
+             what even is this 
+        </div>
+        <div class="card card_medium">
+            <img src="/Users/paulusabraham/Desktop/Screenshot 2024-01-29 at 4.44.57 PM.jpeg" alt="Image 6">
+            our first facetime videocall
+
+        </div>
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/katshi7.jpeg" alt="Image 7">
+            i wanna ride i wanna ride 
+
+        </div>
+        <div class="card card_small">
+            <img src="/Users/paulusabraham/Desktop/ece98ed9-4085-4b49-b8a3-3888a5241332.jpeg" alt="Image 8">
+            my baby was so sleep deprived
+
+        </div>
+        <div class="card card_medium">
+            <img src="/Users/paulusabraham/Desktop/IMG_8691.jpeg" alt="Image 9">
+            eww
+
+        </div>
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/katshi10.jpeg" alt="Image 10">
+              shes just a girl
+        </div> 
+        <div class="card card_small">
+            <img src="/Users/paulusabraham/Desktop/IMG_1857_Original.jpeg" alt="Image 11">
+            need a shirt of this printed
+
+        </div>
+        <div class="card card_medium">
+            <img src="/Users/paulusabraham/Desktop/IMG_8566.jpeg" alt="Image 12">
+            new apartment shenanigans
+
+        </div>
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/katshi13.jpeg" alt="Image 13">
+            kambishi
+        </div> 
+        <div class="card card_small">
+            <img src="/Users/paulusabraham/Desktop/Screenshot 2024-01-29 at 18.30.52.jpeg" alt="Image 14">
+            standard routine
+        </div>
+        <div class="card card_medium">
+            <img src="/Users/paulusabraham/Desktop/IMG_9018.jpg" alt="Image 15">
+                outfit of the day 
+        </div>
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/katshi16.jpeg" alt="Image 16">
+            come closer
+        </div> 
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/72225711842__4CB59BC5-E89A-44C3-A09C-32C63364678B 3.jpeg" alt="Image 17">
+             dookie time
+        </div> 
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/IMG_5527.jpeg" alt="Image 18">
+            mega mind?
+             
+        </div> 
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/lp_image 25.jpeg" alt="Image 19">
+            katshi and bebes
+        </div> 
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/lp_image 40.jpeg" alt="Image 20">
+             first hard core gym gains 
+        </div> 
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/lp_image 30.jpeg" alt="Image 21">
+               self self explanatory
+        </div> 
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/lp_image 29.jpeg" alt="Image 22">
+             come closer
+        </div> 
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/katshi6.jpeg" alt="Image 23">
+             so nasty
+        </div> 
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/lp_image 28.jpeg" alt="Image 24">
+            ??
+        </div> 
+        <div class="card card_large">
+            <img src="/Users/paulusabraham/Desktop/lp_image 36.jpeg" alt="Image 25">
+            gym time lesgooooo
+        </div> 
+        <script>
+            function redirectToAudioPage() {
+                window.location.href = "yesyes.html";
+            }
+        </script>
+
+  </html>
+
